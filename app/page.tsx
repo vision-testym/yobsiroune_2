@@ -135,7 +135,7 @@ const TableComponent = () => {
             <div className="flex-1 grid grid-cols-4 lg:grid-cols-6 gap-2 px-2 py-1">
               <div
                 className="flex items-center justify-center p-2 border border-black 
-              bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base "
+              bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm "
               >
                 نوع المستفيد
               </div>
@@ -156,7 +156,7 @@ const TableComponent = () => {
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 الاسم
               </div>
               <input
@@ -167,14 +167,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base " +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm " +
                   (formik.touched.name && formik.errors.name
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 مكان الميلاد
               </div>
               <input
@@ -185,14 +185,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base " +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm " +
                   (formik.touched.placeOfBirth && formik.errors.placeOfBirth
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 الجنس
               </div>
               <input
@@ -203,14 +203,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.sex && formik.errors.sex
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 الحالة الاجتماعية
               </div>
               <input
@@ -221,14 +221,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.socialStatus && formik.errors.socialStatus
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 تاريخ الميلاد
               </div>
               <input
@@ -239,14 +239,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.dateOfBirth && formik.errors.dateOfBirth
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 العمر
               </div>
               <input
@@ -257,14 +257,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.age && formik.errors.age
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 رقم الهوية / الاقامة
               </div>
               <input
@@ -275,14 +275,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.idNumber && formik.errors.idNumber
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 نوع الهوية
               </div>
               <input
@@ -293,14 +293,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.idType && formik.errors.idType
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 مصدرها
               </div>
               <input
@@ -311,14 +311,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.idSource && formik.errors.idSource
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 المهنة
               </div>
               <input
@@ -329,14 +329,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.job && formik.errors.job
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 الجنسية
               </div>
               <input
@@ -347,14 +347,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.nationality && formik.errors.nationality
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 تاريخ انتهاء الهوية
               </div>
               <input
@@ -365,7 +365,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.idExpirationDate &&
                   formik.errors.idExpirationDate
                     ? " border-red-500 border-2"
@@ -373,7 +373,7 @@ const TableComponent = () => {
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 جهة العمل
               </div>
               <input
@@ -384,14 +384,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.workPlace && formik.errors.workPlace
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 مكان العمل
               </div>
               <input
@@ -402,7 +402,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.workPlaceLocation &&
                   formik.errors.workPlaceLocation
                     ? " border-red-500 border-2"
@@ -410,7 +410,7 @@ const TableComponent = () => {
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 عدد افراد الاسرة
               </div>
               <input
@@ -421,7 +421,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.familyMembersCount &&
                   formik.errors.familyMembersCount
                     ? " border-red-500 border-2"
@@ -438,7 +438,7 @@ const TableComponent = () => {
             </div>
 
             <div className="flex-1 grid grid-cols-4 gap-2 px-2 py-1">
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 رقم جوال
               </div>
               <input
@@ -449,14 +449,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.phoneNumber && formik.errors.phoneNumber
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 الإيميل
               </div>
               <input
@@ -467,14 +467,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.email && formik.errors.email
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 رقم جوال آخر
               </div>
               <input
@@ -485,7 +485,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.otherPhoneNumber &&
                   formik.errors.otherPhoneNumber
                     ? " border-red-500 border-2"
@@ -493,7 +493,7 @@ const TableComponent = () => {
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 اسمه وصلة القرابة
               </div>
               <input
@@ -504,7 +504,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.relativeName && formik.errors.relativeName
                     ? " border-red-500 border-2"
                     : " border-black")
@@ -520,7 +520,7 @@ const TableComponent = () => {
             </div>
 
             <div className="flex-1 grid grid-cols-4 lg:grid-cols-6 gap-2 px-2 py-1">
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 نوع السكن
               </div>
               <input
@@ -531,14 +531,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.homeType && formik.errors.homeType
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 ملكية السكن
               </div>
               <input
@@ -549,14 +549,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.homeOwnership && formik.errors.homeOwnership
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 داخل الحد
               </div>
               <input
@@ -567,14 +567,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.insideBorder && formik.errors.insideBorder
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 المدينة
               </div>
               <input
@@ -585,14 +585,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.city && formik.errors.city
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 الحي
               </div>
               <input
@@ -603,7 +603,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-3" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-3 text-xs md:text-sm" +
                   (formik.touched.neighborhood && formik.errors.neighborhood
                     ? " border-red-500 border-2"
                     : " border-black")
@@ -619,7 +619,7 @@ const TableComponent = () => {
             </div>
 
             <div className="flex-1 grid grid-cols-4 gap-2 px-2 py-1">
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 نوع المرض
               </div>
               <input
@@ -630,14 +630,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.diseaseType && formik.errors.diseaseType
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 من ذوي الاحتياجات الخاصة
               </div>
               <input
@@ -648,14 +648,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.specialNeeds && formik.errors.specialNeeds
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 وصف المرض
               </div>
               <input
@@ -666,7 +666,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.diseaseDescription &&
                   formik.errors.diseaseDescription
                     ? " border-red-500 border-2"
@@ -674,7 +674,7 @@ const TableComponent = () => {
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 الامراض المزمنة
               </div>
               <input
@@ -685,7 +685,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.chronicDiseases &&
                   formik.errors.chronicDiseases
                     ? " border-red-500 border-2"
@@ -702,7 +702,7 @@ const TableComponent = () => {
             </div>
 
             <div className="flex-1 grid grid-cols-4 lg:grid-cols-6 gap-2 px-2 py-1">
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 الدخل الشهري
               </div>
               <input
@@ -713,14 +713,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.monthlyIncome && formik.errors.monthlyIncome
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 مجموع الدخل بعد خصم الايجار
               </div>
               <input
@@ -731,7 +731,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full  px-3 text-sm border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full  px-3 text-sm border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.totalIncomeAfterRent &&
                   formik.errors.totalIncomeAfterRent
                     ? " border-red-500 border-2"
@@ -739,7 +739,7 @@ const TableComponent = () => {
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 دخل الفرد
               </div>
               <input
@@ -750,7 +750,7 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.individualIncome &&
                   formik.errors.individualIncome
                     ? " border-red-500 border-2"
@@ -758,7 +758,7 @@ const TableComponent = () => {
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 مساعدات اخرى
               </div>
               <input
@@ -769,14 +769,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.otherAids && formik.errors.otherAids
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 اسم الجهة
               </div>
               <input
@@ -787,14 +787,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.aidName && formik.errors.aidName
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 نوعها
               </div>
               <input
@@ -805,17 +805,17 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-base" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent col-span-2 lg:col-span-1 text-xs md:text-sm" +
                   (formik.touched.aidType && formik.errors.aidType
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="text-center p-2 border border-black row-span-2 bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="text-center p-2 border border-black row-span-2 bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 معلومات الحساب البنكي
               </div>
-              <div className="flex items-center justify-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold lg:col-span-1 text-xs md:text-base">
+              <div className="flex items-center justify-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold lg:col-span-1 text-xs md:text-sm">
                 اسم البنك
               </div>
               <input
@@ -833,7 +833,7 @@ const TableComponent = () => {
                 }
               />
               {/* ------------------ */}
-              <div className="flex items-center justify-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold lg:col-span-1 text-xs md:text-base">
+              <div className="flex items-center justify-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold lg:col-span-1 text-xs md:text-sm">
                 رقم الحساب
               </div>
               <input
@@ -844,14 +844,14 @@ const TableComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 className={
-                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent" +
+                  "w-full h-full px-3 border focus:outline-none focus:ring-2 focus:border-transparent lg:col-span-2" +
                   (formik.touched.accountNumber && formik.errors.accountNumber
                     ? " border-red-500 border-2"
                     : " border-black")
                 }
               />
               {/* ------------------ */}
-              <div className="flex items-center justify-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-base">
+              <div className="flex items-center justify-center p-2 border border-black bg-blue-900 bg-opacity-80 text-white font-semibold col-span-2 lg:col-span-1 text-xs md:text-sm">
                 رقم الآيبان
               </div>
               <input
