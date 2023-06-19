@@ -17,11 +17,78 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.responsive-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.responsive-subtitle {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.responsive-text {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .responsive-subtitle {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  .responsive-text {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .responsive-subtitle {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  .responsive-text {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+table {
+  width: 100%;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: orange;
+}
+table th {
+  background: #888;
+  color: #fff;
+}
+table th,
+table td {
+  text-align: center;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: orange;
+  padding: 3px 5px;
+}
+
+.subTotatlRow .sub-total-text {
+  text-align: right;
 }
